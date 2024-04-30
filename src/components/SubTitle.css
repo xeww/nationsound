@@ -1,0 +1,18 @@
+.subtitle {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--red1);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.438) 3px 3px;
+}
+
+.subtitle img {
+    color: var(--white1);
+    margin-right: 8px;
+}
+
+.subtitle p {
+    color: var(--white1);
+    font-size: 1.4rem;
+}

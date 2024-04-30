@@ -1,0 +1,25 @@
+/* Header global styles */
+header {
+    background-color: var(--black1);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu icon styles */
+header button {
+    width: 36px;
+    height: 36px;
+    fill: var(--white1);
+    background: none;
+}
+
+/* Header title styles */
+header h1 {
+    color: var(--white1);
+    font-size: 2rem;
+}
