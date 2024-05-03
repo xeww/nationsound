@@ -1,3 +1,4 @@
 .main-wrapper {
-    margin: var(--global-margin);
+    margin-right: var(--global-margin);
+    margin-left: var(--global-margin);
 }

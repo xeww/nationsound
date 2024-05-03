@@ -1,3 +1,9 @@
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
 .artist-card img {
     width: 100%;
     height: 220px;
@@ -11,9 +17,9 @@
     background-color: var(--white1);
     border-radius: 0 0 20px 20px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.199) 3px 3px;
 }
 
 .artist-card-bottom p {
     font-size: 1.4rem;
+    color: var(--black1);
 }

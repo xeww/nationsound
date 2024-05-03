@@ -4,6 +4,8 @@
 /* Global variables */
 :root {
     --global-margin: 20px;
+    --global-margin-mid-res: 80px;
+    --global-margin-high-res: 160px;
     --red1: #FF5C62;
     --white1: #FFFFFF;
     --white2: #F3F3F3;
@@ -38,4 +40,8 @@ body {
 .button-reset {
     border: none;
     cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }

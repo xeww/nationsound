@@ -4,7 +4,7 @@
     background-color: var(--red1);
     padding: 10px;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.438) 3px 3px;
+    margin: 15px 0 15px 0;
 }
 
 .subtitle img {

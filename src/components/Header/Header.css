@@ -2,7 +2,9 @@
 header {
     background-color: var(--black1);
     border-radius: 10px;
-    padding: 2px;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
 }
 
 header nav {
@@ -21,5 +23,10 @@ header button {
 /* Header title styles */
 header h1 {
     color: var(--white1);
-    font-size: 2rem;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }

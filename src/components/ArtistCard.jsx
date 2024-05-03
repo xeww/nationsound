@@ -6,7 +6,7 @@ export default function ArtistCard({ artist }) {
   return (
     <div className="artist-card">
       <img src={imgTest} alt={"Image de" + artist} />
-      <div className="artist-card-bottom">
+      <div className="artist-card-bottom shadow">
         <p className="title-font">{artist}</p>
         <Button1 text="Voir" />
       </div>

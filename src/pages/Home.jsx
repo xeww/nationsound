@@ -1,8 +1,8 @@
-import Header from "../components/Header.jsx";
+import Header from "../components/Header/Header.jsx";
 import SubTitle from "../components/SubTitle.jsx";
 import ArtistCard from "../components/ArtistCard.jsx";
-import Map from "../components/Map.jsx";
-import Footer from "../components/Footer.jsx";
+import Map from "../components/Map/Map.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 import "./Home.css";
 
@@ -14,12 +14,26 @@ export default function Home() {
     <>
       <div className="main-wrapper">
         <Header />
+        <Separator margin="15" />
         <SubTitle icon={calendarIcon} text="Concerts à venir" />
         <ArtistCard artist="Coldplay" />
+        <ArtistCard artist="Coldplay" />
+        <ArtistCard artist="Coldplay" />
+        <Separator margin="20" />
         <SubTitle icon={locationIcon} text="Carte interactive" />
+        <Map />
+        <Separator margin="30" />
       </div>
-      <Map />
       <Footer />
     </>
   );
+}
+
+function Separator({ margin }) {
+  const styles = {
+    height: "1px",
+    margin: margin + "px",
+  };
+
+  return <div style={styles}></div>;
 }

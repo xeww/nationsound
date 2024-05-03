@@ -1,0 +1,10 @@
+.leaflet-container {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.leaflet-control-attribution {
+    display: none; 
+}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Header.css";
 
 function MenuIcon() {
@@ -15,7 +17,9 @@ export default function Header() {
         <button className="button-reset">
           <MenuIcon />
         </button>
-        <h1 className="title-font">LIVE EVENTS</h1>
+        <Link to="/">
+          <h1 className="title-font">LIVE EVENTS</h1>
+        </Link>
       </nav>
     </header>
   );
