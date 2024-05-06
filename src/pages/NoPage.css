@@ -1,0 +1,11 @@
+.no-page-things {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.no-page-things h1 {
+    color: var(--black1);
+    font-size: 1.9rem;
+}

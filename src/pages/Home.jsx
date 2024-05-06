@@ -3,8 +3,7 @@ import SubTitle from "../components/SubTitle.jsx";
 import ArtistCard from "../components/ArtistCard.jsx";
 import Map from "../components/Map/Map.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-
-import "./Home.css";
+import Separator from "../components/Separator.jsx";
 
 import calendarIcon from "../assets/calendar.svg";
 import locationIcon from "../assets/location.svg";
@@ -27,13 +26,4 @@ export default function Home() {
       <Footer />
     </>
   );
-}
-
-function Separator({ margin }) {
-  const styles = {
-    height: "1px",
-    margin: margin + "px",
-  };
-
-  return <div style={styles}></div>;
 }

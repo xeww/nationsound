@@ -1,0 +1,33 @@
+.partner-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/* Upper part */
+.partner-card-container>:nth-child(1) {
+    height: 250px;
+    background-color: var(--white1);
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Brand logo */
+.partner-card-container>:nth-child(1) img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+}
+
+/* Bottom part */
+.partner-card-container>:nth-child(2) {
+    background-color: var(--red1);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    color: var(--white1);
+    font-size: 1.3rem;
+    padding: 10px;
+}
