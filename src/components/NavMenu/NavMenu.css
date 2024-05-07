@@ -1,0 +1,29 @@
+.nav-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+
+    background-color: rgba(44, 44, 44, 0.90);
+    opacity: 0;
+    transition: opacity 200ms;
+
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-menu-item {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--white1);
+}
+
+.nav-menu-item-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

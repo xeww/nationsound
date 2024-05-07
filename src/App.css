@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Background color */
 body {
     background-color: var(--white2);

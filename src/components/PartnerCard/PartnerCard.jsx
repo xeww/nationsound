@@ -1,14 +1,21 @@
 import "./PartnerCard.css";
 
-export default function PartnerCard({ logoSource, partnerType, partnerName }) {
+export default function PartnerCard({
+  logoSource,
+  partnerType,
+  partnerName,
+  partnerWebsite,
+}) {
   return (
     <div className="partner-card-container">
       {/** Upper part */}
       <div>
-        <img
-          src={logoSource}
-          alt={"Logo de notre partenaire: " + partnerName}
-        />
+        <a target="_blank" href={partnerWebsite}>
+          <img
+            src={logoSource}
+            alt={"Logo de notre partenaire: " + partnerName}
+          />
+        </a>
       </div>
       {/** Bottom part */}
       <div className="shadow">

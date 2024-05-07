@@ -24,24 +24,28 @@ export default function Partners() {
           logoSource={airbnb}
           partnerType="Hébergement"
           partnerName="AirBNB"
+          partnerWebsite="https://airbnb.com"
         />
 
         <PartnerCard
           logoSource={ubereats}
           partnerType="Restauration"
           partnerName="Uber Eats"
+          partnerWebsite="https://www.ubereats.com/"
         />
 
         <PartnerCard
           logoSource={spotify}
           partnerType="Technologie"
           partnerName="Spotify"
+          partnerWebsite="https://spotify.com"
         />
 
         <PartnerCard
           logoSource={ticketmaster}
           partnerType="Technologie"
           partnerName="Ticket Master"
+          partnerWebsite="https://ticketmaster.fr"
         />
       </div>
       <Footer />
