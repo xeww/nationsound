@@ -1,0 +1,43 @@
+.concert-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.concert-card-container img {
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    width: auto;
+}
+
+.concert-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white1);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+.concert-card-bottom-left>:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+.concert-card-bottom-left>:nth-child(2) {
+    margin-bottom: 5px;
+}
+
+.concert-card-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.concert-card-bottom-right>:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+.concert-card-bottom-right-seperator {
+    height: 1px;
+    width: 80px;
+    background-color: var(--black1);
+}
