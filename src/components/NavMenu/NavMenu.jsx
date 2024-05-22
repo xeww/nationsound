@@ -37,6 +37,9 @@ export default function NavMenu() {
       <Link to="/programmation">
         <p className="text-body-font nav-menu-item">Programmation</p>
       </Link>
+      <Link to="/partenaires">
+        <p className="text-body-font nav-menu-item">Partenaires</p>
+      </Link>
       <Link to="/faq">
         <p className="text-body-font nav-menu-item">FAQ</p>
       </Link>

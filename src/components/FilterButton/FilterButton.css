@@ -1,0 +1,14 @@
+.filter-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--white1);
+    border-radius: 15px;
+    border: 1px solid var(--black1);
+    padding: 3px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.filter-button p {
+    font-size: 1.2rem;
+}

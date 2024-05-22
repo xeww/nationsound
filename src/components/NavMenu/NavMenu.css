@@ -6,6 +6,7 @@
     position: absolute;
     top: 100%;
     left: 0%;
+    z-index: 3;
 
     background-color: rgba(44, 44, 44, 0.90);
     opacity: 0;
