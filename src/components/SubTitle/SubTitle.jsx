@@ -1,9 +1,9 @@
 import "./SubTitle.css";
 
-export default function SubTitle({ icon, text }) {
+export default function SubTitle({ svgIcon, text }) {
   return (
     <div className="subtitle shadow">
-      <img src={icon} alt="Une icône" />
+      {svgIcon}
       <p className="title-font">{text}</p>
     </div>
   );

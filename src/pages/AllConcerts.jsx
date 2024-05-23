@@ -3,19 +3,17 @@ import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import ConcertCard from "../components/ConcertCard/ConcertCard.jsx";
 import Separator from "../components/Separator.jsx";
-import FilterButton from "../components/FilterButton/FilterButton.jsx";
 import { useContext, useEffect, useState } from "react";
-
-import calendarIcon from "../assets/calendar.svg";
-import locationIcon from "../assets/location.svg";
+import Input from "../components/Input/Input.jsx";
+import { CalendarIcon, MapPinIcon, MusicIcon } from "../utils/Svgs.jsx";
 
 export default function AllConcerts() {
-  const [concertCards, setConcertCards] = useState(null);
+  const [cards, setCards] = useState(null);
   const concerts = useContext(ConcertsContext);
 
   useEffect(() => {
     if (concerts) {
-      setConcertCards(
+      setCards(
         concerts.map((object) => (
           <ConcertCard
             key={object.id}
@@ -35,10 +33,11 @@ export default function AllConcerts() {
       <div className="main-wrapper">
         <Header />
         <Separator margin="15" />
-        <FilterButton icon={calendarIcon} text="Date" clickHandler={() => {}} />
-        <FilterButton icon={locationIcon} text="Lieu" clickHandler={() => {}} />
+        <Input svgIcon={<CalendarIcon />} placeholder="Rechercher par date" />
+        <Input svgIcon={<MapPinIcon />} placeholder="Rechercher par lieu" />
+        <Input svgIcon={<MusicIcon />} placeholder="Rechercher par artiste" />
         <Separator margin="25" />
-        {concertCards}
+        {cards}
         <Separator margin="30" />
       </div>
       <Footer />

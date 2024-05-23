@@ -1,5 +1,6 @@
 import "./ArtistCard.css";
-import Button1 from "./Button1.jsx";
+import Button1 from "../Button1.jsx";
+import { Link } from "react-router-dom";
 
 export default function ArtistCard({ artist, imageSource }) {
   return (
@@ -7,7 +8,9 @@ export default function ArtistCard({ artist, imageSource }) {
       <img src={imageSource} alt={"Image de" + artist} />
       <div className="artist-card-bottom shadow">
         <p className="title-font">{artist}</p>
-        <Button1 text="Voir" />
+        <Link to="programmation">
+          <Button1 text="Voir" />
+        </Link>
       </div>
     </div>
   );

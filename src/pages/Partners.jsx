@@ -2,7 +2,7 @@ import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Separator from "../components/Separator.jsx";
 import PartnerCard from "../components/PartnerCard/PartnerCard.jsx";
-import { getPartnersURL } from "../utils.js";
+import { getPartnersURL } from "../utils/utils.js";
 import { useState, useEffect } from "react";
 
 async function fetchPartners() {

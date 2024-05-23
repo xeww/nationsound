@@ -8,3 +8,7 @@ export function getPartnersURL() {
 export function getConcertsURL() {
     return `${wpJsonUrl}/type-concerts${acfFormat}`;
 }
+
+export function getSingleConcertURL(id) {
+    return `${wpJsonUrl}/type-concerts/${id}${acfFormat}`;
+}

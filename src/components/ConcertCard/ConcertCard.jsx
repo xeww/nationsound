@@ -1,5 +1,4 @@
 import Button1 from "../Button1.jsx";
-
 import "./ConcertCard.css";
 
 export default function ConcertCard({
@@ -16,7 +15,10 @@ export default function ConcertCard({
         <div className="concert-card-bottom-left">
           <p className="title-font">{artistName}</p>
           <p className="text-body-font">{location}</p>
-          <Button1 text="Voir" />
+          <Button1
+            text="Acheter des tickets"
+            onClick={() => window.open("https://ticketmaster.fr")}
+          />
         </div>
         <div className="concert-card-bottom-right">
           <p className="title-font">{date}</p>
