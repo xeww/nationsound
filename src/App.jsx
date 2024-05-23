@@ -27,22 +27,21 @@ export default function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/partenaires" element={<Partners />} />
-          <Route
-            path="/programmation"
-            element={
-              <ConcertsContext.Provider value={concertsData}>
-                <AllConcerts />
-              </ConcertsContext.Provider>
-            }
-          />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
+      <ConcertsContext.Provider value={concertsData}>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+
+            <Route path="/faq" element={<Faq />} />
+
+            <Route path="/partenaires" element={<Partners />} />
+
+            <Route path="/programmation" element={<AllConcerts />} />
+
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      </ConcertsContext.Provider>
     </>
   );
 }

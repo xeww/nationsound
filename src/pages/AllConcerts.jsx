@@ -15,7 +15,6 @@ export default function AllConcerts() {
 
   useEffect(() => {
     if (concerts) {
-      console.log("ye");
       setConcertCards(
         concerts.map((object) => (
           <ConcertCard
@@ -24,7 +23,7 @@ export default function AllConcerts() {
             artistName={object.acf.nom_artiste}
             location={object.acf.lieu}
             date={object.acf.date}
-            hour={object.acf.date}
+            hour={object.acf.heure}
           />
         ))
       );

@@ -21,7 +21,7 @@ export default function ConcertCard({
         <div className="concert-card-bottom-right">
           <p className="title-font">{date}</p>
           <div className="concert-card-bottom-right-seperator"></div>
-          <p className="text-body-font">{hour}</p>
+          <p className="text-body-font">à {hour}</p>
         </div>
       </div>
     </div>
