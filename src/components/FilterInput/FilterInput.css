@@ -1,4 +1,4 @@
-.input-container {
+.filter-input-container {
     display: flex;
     align-items: center;
     position: relative;
@@ -6,7 +6,7 @@
     color: var(--black1);
 }
 
-.input-container input {
+.filter-input-container input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px;
@@ -18,15 +18,15 @@
     font-size: 1rem;
 }
 
-.input-container input:focus, .input-container input:hover {
+.filter-input-container input:focus, .filter-input-container input:hover {
     border: 2px solid var(--red1);
 }
 
-.input-container input::placeholder {
+.filter-input-container input::placeholder {
     color: var(--black1);
 }
 
-.input-container svg {
+.filter-input-container svg {
     color: var(--black1);
     position: absolute;
     margin-left: 6px;
