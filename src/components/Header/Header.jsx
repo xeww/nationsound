@@ -32,7 +32,7 @@ export default function Header() {
       <nav>
         <NavMenuButton />
         <Link to="/">
-          <h1 className="title-font">NATION SOUNDS</h1>
+          <h1 className="title-font">NATION SOUND</h1>
         </Link>
       </nav>
       <NavMenu />

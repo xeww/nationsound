@@ -13,6 +13,10 @@ export function getSingleConcertURL(id) {
     return `${wpJsonUrl}/type-concerts/${id}${acfFormat}`;
 }
 
+export function getScenesURL() {
+    return `${wpJsonUrl}/type-scenes${acfFormat}`;
+}
+
 export function containsString(str1, str2) {
     return str2.toLowerCase().includes(str1.toLowerCase());
 }
