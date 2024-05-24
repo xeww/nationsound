@@ -10,18 +10,14 @@ import { getConcertsURL } from "./utils/utils.js";
 
 export const ConcertsContext = createContext(null);
 
-async function fetchConcertsData() {
-  const response = await fetch(getConcertsURL());
-  const json = await response.json();
-  return json;
-}
-
 export default function App() {
   const [concertsData, setConcertsData] = useState(null);
+
   useEffect(() => {
     (async () => {
-      const data = await fetchConcertsData();
-      setConcertsData(data);
+      const response = await fetch(getConcertsURL());
+      const json = await response.json();
+      setConcertsData(json);
     })();
   }, []);
 

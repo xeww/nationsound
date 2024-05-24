@@ -1,11 +1,10 @@
+import "./Footer.css";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import snapchat from "../../assets/snapchat.svg";
 import twitter from "../../assets/twitter.svg";
 import youtube from "../../assets/youtube.svg";
 import linkedin from "../../assets/linkedin.svg";
-
-import "./Footer.css";
 
 export default function Footer() {
   return (

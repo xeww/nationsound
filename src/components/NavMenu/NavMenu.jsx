@@ -1,6 +1,6 @@
+import "./NavMenu.css";
 import { Link } from "react-router-dom";
 import { ExternalLinkIcon } from "../../utils/Svgs";
-import "./NavMenu.css";
 
 export default function NavMenu() {
   return (
