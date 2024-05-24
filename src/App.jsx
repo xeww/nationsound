@@ -1,3 +1,4 @@
+import "./App.css";
 import { createContext, useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
@@ -6,8 +7,6 @@ import Partners from "./pages/Partners.jsx";
 import AllConcerts from "./pages/AllConcerts.jsx";
 import NoPage from "./pages/NoPage.jsx";
 import { getConcertsURL } from "./utils/utils.js";
-import "./App.css";
-import SingleConcert from "./pages/SingleConcert.jsx";
 
 export const ConcertsContext = createContext(null);
 
@@ -38,8 +37,6 @@ export default function App() {
             <Route path="/partenaires" element={<Partners />} />
 
             <Route path="/programmation" element={<AllConcerts />} />
-
-            <Route path="/concert" element={<SingleConcert />} />
 
             <Route path="*" element={<NoPage />} />
           </Routes>
