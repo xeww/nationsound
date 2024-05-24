@@ -1,7 +1,6 @@
+import "./Header.css";
 import { Link } from "react-router-dom";
 import NavMenu from "../NavMenu/NavMenu.jsx";
-
-import "./Header.css";
 import { MenuIcon } from "../../utils/Svgs.jsx";
 
 function NavMenuButton() {
@@ -33,7 +32,7 @@ export default function Header() {
       <nav>
         <NavMenuButton />
         <Link to="/">
-          <h1 className="title-font">LIVE EVENTS</h1>
+          <h1 className="title-font">NATION SOUNDS</h1>
         </Link>
       </nav>
       <NavMenu />
