@@ -4,4 +4,9 @@
     font-size: 1.2rem;
     border-radius: 15px;
     padding: 8px 25px 8px 25px;
+    transition: background-color 0.2s;
+}
+
+.button1:hover {
+    background-color: var(--red1-hover);
 }
