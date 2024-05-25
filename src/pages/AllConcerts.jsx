@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { CalendarIcon, MapPinIcon, MusicIcon } from "../utils/Svgs.jsx";
 import { containsString } from "../utils/utils.js";
 import FilterInput from "../components/FilterInput/FilterInput.jsx";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop.jsx";
 
 export default function AllConcerts() {
   const [cards, setCards] = useState(null);
@@ -84,6 +85,7 @@ export default function AllConcerts() {
         <Separator margin="25" />
         {cards}
         <Separator margin="30" />
+        <ScrollToTop />
       </div>
       <Footer />
     </>

@@ -7,6 +7,7 @@ import Separator from "../components/Separator.jsx";
 import { useContext, useEffect, useState } from "react";
 import { ConcertsContext } from "../App.jsx";
 import { CalendarIcon, MapPinIcon } from "../utils/Svgs.jsx";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop.jsx";
 
 export default function Home() {
   const concerts = useContext(ConcertsContext);
@@ -38,6 +39,7 @@ export default function Home() {
         <SubTitle svgIcon={<MapPinIcon />} text="Carte interactive" />
         <Map />
         <Separator margin="30" />
+        <ScrollToTop />
       </div>
       <Footer />
     </>

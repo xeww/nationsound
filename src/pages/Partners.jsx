@@ -4,6 +4,7 @@ import Separator from "../components/Separator.jsx";
 import PartnerCard from "../components/PartnerCard/PartnerCard.jsx";
 import { getPartnersURL } from "../utils/utils.js";
 import { useState, useEffect } from "react";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop.jsx";
 
 async function fetchPartners() {
   const response = await fetch(getPartnersURL());
@@ -37,6 +38,7 @@ export default function Partners() {
         <Header />
         <Separator margin="30" />
         {partnerCards}
+        <ScrollToTop />
       </div>
       <Footer />
     </>
