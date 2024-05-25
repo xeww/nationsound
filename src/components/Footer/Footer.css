@@ -11,7 +11,7 @@ footer p {
     color: var(--white1);
 }
 
-.social-badge {
+footer svg {
     width: 30px;
     height: 30px;
     margin-right: 8px;
@@ -20,4 +20,12 @@ footer p {
 .footer-links {
     display: flex;
     gap: 10px;
+}
+
+.footer-link {
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }

@@ -1,10 +1,12 @@
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  SnapchatIcon,
+  TwitterIcon,
+  YoutubeIcon,
+} from "../../utils/Svgs";
 import "./Footer.css";
-import facebook from "../../assets/facebook.svg";
-import instagram from "../../assets/instagram.svg";
-import snapchat from "../../assets/snapchat.svg";
-import twitter from "../../assets/twitter.svg";
-import youtube from "../../assets/youtube.svg";
-import linkedin from "../../assets/linkedin.svg";
 
 export default function Footer() {
   return (
@@ -13,30 +15,30 @@ export default function Footer() {
 
       <div className="socials">
         <a href="https://facebook.com" target="_blank">
-          <img src={facebook} className="social-badge" />
+          <FacebookIcon />
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src={instagram} className="social-badge" />
+          <InstagramIcon />
         </a>
         <a href="https://snapchat.com" target="_blank">
-          <img src={snapchat} className="social-badge" />
+          <SnapchatIcon />
         </a>
         <a href="https://twitter.com" target="_blank">
-          <img src={twitter} className="social-badge" />
+          <TwitterIcon />
         </a>
         <a href="https://youtube.com" target="_blank">
-          <img src={youtube} className="social-badge" />
+          <YoutubeIcon />
         </a>
         <a href="https://linkedin.com" target="_blank">
-          <img src={linkedin} className="social-badge" />
+          <LinkedinIcon />
         </a>
       </div>
 
       <div className="footer-links">
-        <p className="text-body-font">Mentions légales</p>
-        <p className="text-body-font">Contact</p>
+        <p className="text-body-font footer-link">Mentions légales</p>
+        <p className="text-body-font footer-link">Contact</p>
       </div>
-      <p className="text-body-font">Charte données personnelles</p>
+      <p className="text-body-font footer-link">Charte données personnelles</p>
     </footer>
   );
 }
