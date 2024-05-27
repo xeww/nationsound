@@ -20,6 +20,14 @@ header button {
     background: none;
 }
 
+header svg {
+    transition: fill 0.2s, rotate 0.3s;
+}
+
+header svg:hover {
+    fill: var(--white2);
+}
+
 /* Header title styles */
 header h1 {
     color: var(--white1);
@@ -30,4 +38,9 @@ header h1 {
     transform: translate(-50%, -50%); 
     cursor: pointer;
     text-wrap: nowrap;
+    transition: color 0.3s;
+}
+
+header h1:hover {
+    color: var(--white2);
 }

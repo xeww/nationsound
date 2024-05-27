@@ -6,15 +6,18 @@ import { MenuIcon } from "../../utils/Svgs.jsx";
 function NavMenuButton() {
   const handleClick = () => {
     let menu = document.querySelector(".nav-menu-container");
-    if (menu) {
+    let svg = document.querySelector("nav svg");
+    if (menu && svg) {
       if (menu.style.opacity === "1") {
         menu.style.opacity = "0";
         menu.style.visibility = "hidden";
         menu.style.pointerEvents = "none";
+        svg.style.rotate = "0deg";
       } else {
         menu.style.opacity = "1";
         menu.style.visibility = "visible";
         menu.style.pointerEvents = "auto";
+        svg.style.rotate = "90deg";
       }
     }
   };
