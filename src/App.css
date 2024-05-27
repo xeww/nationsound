@@ -55,3 +55,10 @@ body {
     margin-right: var(--global-margin);
     margin-left: var(--global-margin);
 }
+
+@media (min-width: 750px) {
+    .main-wrapper {
+        margin-right: var(--global-margin-mid-res);
+        margin-left: var(--global-margin-mid-res);
+    }
+}

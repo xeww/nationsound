@@ -10,6 +10,8 @@
 .subtitle svg {
     color: var(--white1);
     margin-right: 8px;
+    width: 36px;
+    height: 36px;
 }
 
 .subtitle p {

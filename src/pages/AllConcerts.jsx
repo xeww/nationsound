@@ -4,10 +4,17 @@ import Footer from "../components/Footer/Footer.jsx";
 import ConcertCard from "../components/ConcertCard/ConcertCard.jsx";
 import Separator from "../components/Separator.jsx";
 import { useContext, useEffect, useState } from "react";
-import { CalendarIcon, MapPinIcon, MusicIcon } from "../utils/Svgs.jsx";
+import {
+  CalendarIcon,
+  CompassIcon,
+  FilterIcon,
+  MapPinIcon,
+  MusicIcon,
+} from "../utils/Svgs.jsx";
 import { containsString } from "../utils/utils.js";
 import FilterInput from "../components/FilterInput/FilterInput.jsx";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop.jsx";
+import SubTitle from "../components/SubTitle/SubTitle.jsx";
 
 export default function AllConcerts() {
   const [cards, setCards] = useState(null);
@@ -64,6 +71,8 @@ export default function AllConcerts() {
       <div className="main-wrapper">
         <Header />
         <Separator margin="15" />
+
+        <SubTitle svgIcon={<FilterIcon />} text="Filtres" />
         <FilterInput
           id="date-filter"
           svgIcon={<CalendarIcon />}
@@ -82,9 +91,12 @@ export default function AllConcerts() {
           placeholder="Rechercher par artiste"
           onChange={handleFilters}
         />
+
         <Separator margin="25" />
+        <SubTitle svgIcon={<CompassIcon />} text="Concerts" />
         {cards}
         <Separator margin="30" />
+
         <ScrollToTop />
       </div>
       <Footer />
