@@ -8,8 +8,7 @@ export default function PartnerCard({
 }) {
   return (
     <div className="partner-card-container">
-      {/** Upper part */}
-      <div>
+      <div className="partner-card-upper">
         <a target="_blank" href={partnerWebsite}>
           <img
             src={logoSource}
@@ -17,8 +16,8 @@ export default function PartnerCard({
           />
         </a>
       </div>
-      {/** Bottom part */}
-      <div className="shadow">
+
+      <div className="partner-card-bottom shadow">
         <p className="title-font">Partenaire {partnerType}</p>
       </div>
     </div>

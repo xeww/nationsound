@@ -1,0 +1,4 @@
+.artist-cards-container {
+    display: flex;
+    flex-direction: column;
+}

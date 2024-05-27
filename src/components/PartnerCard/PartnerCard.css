@@ -1,33 +1,36 @@
 .partner-card-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    width: 100%;
 }
 
-/* Upper part */
-.partner-card-container>:nth-child(1) {
-    height: 250px;
+.partner-card-upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
     background-color: var(--white1);
     position: relative;
     border-radius: 20px 20px 0 0;
 }
 
 /* Brand logo */
-.partner-card-container>:nth-child(1) img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.partner-card-upper img {
+    height: 150px;
     width: auto;
-    height: 50%;
 }
 
-/* Bottom part */
-.partner-card-container>:nth-child(2) {
+.partner-card-bottom {
     background-color: var(--red1);
     border-radius: 0 0 20px 20px;
     text-align: center;
     color: var(--white1);
     font-size: 1.3rem;
-    padding: 10px;
+    padding: 15px;
+}
+
+@media (min-width: 1000px) {
+    .partner-card-container {
+        width: 400px;
+    }
 }

@@ -1,3 +1,4 @@
+import "./AllConcerts.css";
 import { ConcertsContext } from "../App.jsx";
 import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
@@ -73,28 +74,30 @@ export default function AllConcerts() {
         <Separator margin="15" />
 
         <SubTitle svgIcon={<FilterIcon />} text="Filtres" />
-        <FilterInput
-          id="date-filter"
-          svgIcon={<CalendarIcon />}
-          placeholder="Rechercher par date"
-          onChange={handleFilters}
-        />
-        <FilterInput
-          id="location-filter"
-          svgIcon={<MapPinIcon />}
-          placeholder="Rechercher par lieu"
-          onChange={handleFilters}
-        />
-        <FilterInput
-          id="artist-filter"
-          svgIcon={<MusicIcon />}
-          placeholder="Rechercher par artiste"
-          onChange={handleFilters}
-        />
+        <div className="filter-inputs-container">
+          <FilterInput
+            id="date-filter"
+            svgIcon={<CalendarIcon />}
+            placeholder="Rechercher par date"
+            onChange={handleFilters}
+          />
+          <FilterInput
+            id="location-filter"
+            svgIcon={<MapPinIcon />}
+            placeholder="Rechercher par lieu"
+            onChange={handleFilters}
+          />
+          <FilterInput
+            id="artist-filter"
+            svgIcon={<MusicIcon />}
+            placeholder="Rechercher par artiste"
+            onChange={handleFilters}
+          />
+        </div>
 
         <Separator margin="25" />
         <SubTitle svgIcon={<CompassIcon />} text="Concerts" />
-        {cards}
+        <div className="concert-cards-container">{cards}</div>
         <Separator margin="30" />
 
         <ScrollToTop />

@@ -5,7 +5,7 @@
 :root {
     --global-margin: 20px;
     --global-margin-mid-res: 80px;
-    --global-margin-high-res: 160px;
+    --global-margin-high-res: 140px;
     --red1: #FF5C62;
     --red1-hover: #f3575d;
     --white1: #FFFFFF;
@@ -60,5 +60,12 @@ body {
     .main-wrapper {
         margin-right: var(--global-margin-mid-res);
         margin-left: var(--global-margin-mid-res);
+    }
+}
+
+@media (min-width: 900px) {
+    .main-wrapper {
+        /* margin-right: var(--global-margin-high-res);
+        margin-left: var(--global-margin-high-res); */
     }
 }

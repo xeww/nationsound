@@ -1,3 +1,4 @@
+import "./Home.css";
 import Header from "../components/Header/Header.jsx";
 import SubTitle from "../components/SubTitle/SubTitle.jsx";
 import ArtistCard from "../components/ArtistCard/ArtistCard.jsx";
@@ -34,7 +35,7 @@ export default function Home() {
         <Header />
         <Separator margin="15" />
         <SubTitle svgIcon={<CalendarIcon />} text="Concerts à venir" />
-        {cards}
+        <div className="artist-cards-container">{cards}</div>
         <Separator margin="20" />
         <SubTitle svgIcon={<MapPinIcon />} text="Carte interactive" />
         <Map />
