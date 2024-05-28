@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../../assets/logo-white.png";
 import { Link } from "react-router-dom";
 import NavMenu from "../NavMenu/NavMenu.jsx";
 import { MenuIcon } from "../../utils/Svgs.jsx";
@@ -35,7 +36,7 @@ export default function Header() {
       <nav>
         <NavMenuButton />
         <Link to="/">
-          <h1 className="title-font">NATION SOUND</h1>
+          <img src={logo} alt="Logo de Nation Sound" />
         </Link>
       </nav>
       <NavMenu />
