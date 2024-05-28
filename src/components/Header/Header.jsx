@@ -18,7 +18,7 @@ function NavMenuButton() {
         menu.style.opacity = "1";
         menu.style.visibility = "visible";
         menu.style.pointerEvents = "auto";
-        svg.style.rotate = "90deg";
+        svg.style.rotate = "180deg";
       }
     }
   };
