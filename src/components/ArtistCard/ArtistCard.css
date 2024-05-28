@@ -25,20 +25,8 @@
     color: var(--black1);
 }
 
-@media (min-width: 800px) {
-    .artist-card {
-        flex-direction: row;
-    }
-
+@media (min-width: 600px) {
     .artist-card img {
-        border-radius: 20px 0 0 20px;
-        width: 300px;
-        height: 300px;
-    }
-
-    .artist-card-bottom {
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 0 20px 20px 0;
+        height: 250px;
     }
 }

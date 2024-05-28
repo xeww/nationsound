@@ -9,6 +9,7 @@ import { useContext, useEffect, useState } from "react";
 import { ConcertsContext } from "../App.jsx";
 import { CalendarIcon, MapPinIcon } from "../utils/Svgs.jsx";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop.jsx";
+import ConcertCard from "../components/ConcertCard/ConcertCard.jsx";
 
 export default function Home() {
   const concerts = useContext(ConcertsContext);
@@ -19,10 +20,18 @@ export default function Home() {
       const filteredConcerts = concerts.filter((object) => object.acf.a_venir);
       setCards(
         filteredConcerts.map((object) => (
-          <ArtistCard
+          // <ArtistCard
+          //   key={object.id}
+          //   artist={object.acf.nom_artiste}
+          //   imageSource={object.acf.cover_image}
+          // />
+          <ConcertCard
             key={object.id}
-            artist={object.acf.nom_artiste}
             imageSource={object.acf.cover_image}
+            artistName={object.acf.nom_artiste}
+            location={object.acf.lieu}
+            date={object.acf.date}
+            hour={object.acf.heure}
           />
         ))
       );
