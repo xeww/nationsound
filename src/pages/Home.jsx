@@ -1,7 +1,6 @@
 import "./Home.css";
 import Header from "../components/Header/Header.jsx";
 import SubTitle from "../components/SubTitle/SubTitle.jsx";
-import ArtistCard from "../components/ArtistCard/ArtistCard.jsx";
 import Map from "../components/Map/Map.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Separator from "../components/Separator.jsx";
